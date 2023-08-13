@@ -24,6 +24,15 @@ To run the Tic-Tac-Toe game, follow these steps:
 - The game will display the updated board after each move.
 - The first player to get three in a row wins!
 
+## Final Thoughts
+
+Lots of room for improvement:
+- Could have made the board dynamic (allow users to set their box sizes) and larger.
+- Add some unit test.
+- Even refactor the code.
+
+Well, I don't have much time to spend (just a few hours). I just needed to get my hands dirty with Rust, Besides **TICTACTOE** is not a novelty project 😉.
+
 ## Contributors
 
 - [damn-ice](https://github.com/damn-ice) - Created the Tic-Tac-Toe game in Rust.

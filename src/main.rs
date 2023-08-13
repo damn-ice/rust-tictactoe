@@ -13,6 +13,12 @@ impl GamePiece {
             GamePiece::O => "O",
         }
     }
+    fn switch(&self) -> GamePiece {
+        match self {
+            GamePiece::X => GamePiece::O,
+            GamePiece::O => GamePiece::X,
+        }       
+    }
 }
 
 fn main() {
@@ -64,10 +70,7 @@ fn play_game(board: &mut [&str; 9]) {
             Ok(num) => {
                 clear_screen();
                 board[num - 1] = player.as_str();
-                player = match player {
-                    GamePiece::X => GamePiece::O,
-                    GamePiece::O => GamePiece::X
-                };
+                player = player.switch();
                 continue;
             }
             Err(e) => {
